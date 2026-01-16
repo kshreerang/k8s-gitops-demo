@@ -51,4 +51,5 @@ jobs:
         git config --global user.email "ci@github.com"
         git add my-nginx-chart/values.yaml
         git commit -m "Update image tag to ${{ github.sha }}"
+        git pull origin main --rebase
         git push
